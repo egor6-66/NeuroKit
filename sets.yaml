@@ -1,0 +1,13 @@
+general:
+  rules: [rules/development/*]
+
+solid:
+  rules: [rules/frameworks/solid/*]
+
+web-core:
+  rules:
+    - rules/frameworks/web-core/common/*
+    - rules/frameworks/web-core/api/*
+    - rules/frameworks/web-core/components/*
+    - rules/frameworks/web-core/routing/*
+    - rules/frameworks/web-core/styling/*
