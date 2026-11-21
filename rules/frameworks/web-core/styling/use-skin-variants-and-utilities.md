@@ -5,6 +5,8 @@ description: Define reusable component appearances as skin variants and apply sm
 
 Choose a documented component variant for the intended appearance. When a component needs a distinct reusable look, define a named variant in the skin and select it through the component's variant API, such as data-variant. Keep the styling shared by consumers in that variant.
 
+Before styling a composite component, check its documented anatomy in the component README. Target the part that owns the property through the skin. For a dialog with a fixed header and scrolling content, set the panel dimensions on `content` and scrolling on `body`. Use documented part names rather than positional DOM selectors such as `div:last-child`, whose target can change with the composition.
+
 For a small adjustment specific to one placement, keep the base variant and use the inline style utilities from @web-core/skin. A difference in one layout setting, such as the gap between items in a single toolbar, is usually a local adjustment. If the adjustment expresses a reusable visual role, it can warrant a variant even when only one property changes.
 
 Use skin utilities for inline styles by default. Use layoutGroup for how a container arranges its children, layoutSelf for an item's placement in its parent, and the matching token helper for individual dimensions. For example:
