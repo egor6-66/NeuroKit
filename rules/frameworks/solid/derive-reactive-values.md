@@ -3,7 +3,7 @@ name: derive-reactive-values
 description: Derive values from reactive inputs and reserve writable signals for values that change independently.
 ---
 
-When existing signals, stores, or props fully determine a value, express the calculation as a function that reads those inputs when called. Use createMemo from @web-core/solid when consumers benefit from sharing a cached calculation. Keep the calculation pure. An effect that copies the result into another signal introduces a setter and a synchronization step.
+When existing signals, stores, or props fully determine a value, express the calculation as a function that reads those inputs when called. Use createMemo when consumers benefit from sharing a cached calculation. Keep the calculation pure. An effect that copies the result into another signal introduces a setter and a synchronization step.
 
 For example, if the agents module exposes a reactive lookup, the selected agent can follow the selected ID and the current entity data:
 

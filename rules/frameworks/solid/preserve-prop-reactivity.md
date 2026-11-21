@@ -11,7 +11,7 @@ function AgentHeading(props: { name: string }) {
 }
 ```
 
-For repeated reads, an accessor such as `const name = () => props.name` retrieves the current value when called. To separate locally consumed props from those forwarded to a child, use splitProps from @web-core/solid and read properties from the returned groups.
+For repeated reads, an accessor such as `const name = () => props.name` retrieves the current value when called. To separate locally consumed props from those forwarded to a child, use Solid's splitProps and read properties from the returned groups.
 
 Check the update path: render the component, change the prop in the parent while the same component stays mounted, and verify that its displayed value updates.
 

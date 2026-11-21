@@ -6,8 +6,6 @@ description: Release subscriptions, timers, and event listeners when their ownin
 Identify when the resource should stop acting. Register cleanup next to setup, in the Solid scope that owns that resource. For a component-lifetime timer, register clearInterval when creating the interval in onMount. For a subscription keyed by a reactive prop, create the subscription and register its disposer inside the same effect.
 
 ```tsx
-import { createEffect, onCleanup } from '@web-core/solid'
-
 createEffect(() => {
   const unsubscribe = agentEvents.subscribe(props.agentId, handleEvent)
   onCleanup(unsubscribe)

@@ -3,7 +3,7 @@ name: key-queries-by-input
 description: Key cached queries by the resource and the inputs that identify the requested data.
 ---
 
-Include the resource and the request parameters that distinguish independently cached results in the query key. Inside the reactive options function, prepare the inputs once and use the same values for the key and the API call.
+Use the public @web-core/query entry point so providers and consumers share the same query context. Include the resource and the request parameters that distinguish independently cached results in the query key. Inside the reactive options function, prepare the inputs once and use the same values for the key and the API call.
 
 ```ts
 import { createQuery } from '@web-core/query'
