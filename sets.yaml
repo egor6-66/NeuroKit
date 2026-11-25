@@ -11,3 +11,6 @@ web-core:
     - rules/frameworks/web-core/components/*
     - rules/frameworks/web-core/routing/*
     - rules/frameworks/web-core/styling/*
+
+python:
+  rules: [rules/languages/python/*]
