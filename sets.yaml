@@ -21,3 +21,7 @@ frontend-skills:
     - skills/review/SKILL.md
     - skills/frontend/place-frontend-behavior/SKILL.md
     - skills/frameworks/web-core/forms/build-entity-form/SKILL.md
+
+threejs:
+  skills:
+    - skills/libraries/threejs/threejs-animation/SKILL.md
